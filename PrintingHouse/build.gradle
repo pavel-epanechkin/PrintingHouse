@@ -1,0 +1,24 @@
+apply from: "http://dl.bintray.com/content/shemnon/javafx-gradle/8.1.1/javafx.plugin"
+
+javafx {
+    appID 'PrintingHouse'
+    appName 'PrintingHouse'
+    mainClass 'main.java.Main'
+    // ...
+}
+
+group 'PrintingHouse'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+}
